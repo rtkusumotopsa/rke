@@ -20,7 +20,7 @@ services:
 
 # Required for external TLS termination with
 # ingress-nginx v0.22+
-ingress:
-  provider: nginx
-  options:
-    use-forwarded-headers: "true"
+#ingress:
+#  provider: nginx
+#  options:
+#    use-forwarded-headers: "true"

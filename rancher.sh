@@ -7,7 +7,7 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 helm repo add jetstack https://charts.jetstack.io
 
 # Adicionado o traefik no repositório do helm
-helm repo add traefik https://helm.traefik.io/traefik
+# helm repo add traefik https://helm.traefik.io/traefik
 
 helm repo update
 
