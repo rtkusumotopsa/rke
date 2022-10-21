@@ -24,3 +24,7 @@ services:
 #  provider: nginx
 #  options:
 #    use-forwarded-headers: "true"
+
+#Desativando o ingress default
+ingress:
+  provider: none
