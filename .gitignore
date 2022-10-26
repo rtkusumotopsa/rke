@@ -2,3 +2,4 @@ kube_config_rancher-cluster.yml
 rancher-cluster.rkestate
 !*.sh
 !.gitignore
+rke2.yaml

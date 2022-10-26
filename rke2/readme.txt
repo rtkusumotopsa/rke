@@ -4,6 +4,12 @@ Criando o cluster rtk2, com ingress nginx
 
 Foi seguido o tutorial na própria documentação oficial
 	https://docs.rke2.io/install/quickstart/
+	https://docs.rke2.io/install/ha/
+
+Pré-requisito
+É necessário acrescentar no sysctl os seguintes parametros
+	net.ipv4.conf.all.forwarding       = 1
+	net.ipv6.conf.all.forwarding       = 1
 
 1 - executar o installer
 	curl -sfL https://get.rke2.io | sh -
@@ -67,3 +73,7 @@ Para ver se está tudo funcional, execute
 	/var/lib/rancher/rke2/bin/kubectl \
 	        --kubeconfig /etc/rancher/rke2/rke2.yaml get nodes
 
+
+Notas
+
+Dois scripts de limpezas serão instalados no caminho ./usr/local/bin/rke2. Eles são: rke2-killall.sh e rke2-uninstall.sh.
