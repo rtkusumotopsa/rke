@@ -1,5 +1,5 @@
-# server: https://cluster.k8s.net:9345 # Parametro para o servidor adicional
-token: c142962ddddc9af1fc357f8e4808e6f5
+server: https://cluster.k8s.net:9345 # comente essa linha para o primeiro servidor
+token: c142962ddddc9af1fc357f8e4808e6f5 # chave gera a criterio do instalador, essa ao lado foi gerada usando o md5
 tls-san:
   - cluster.k8s.net
 node-taint:
