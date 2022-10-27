@@ -1,3 +1,4 @@
+# server: https://cluster.k8s.net:9345 # Parametro para o servidor adicional
 token: c142962ddddc9af1fc357f8e4808e6f5
 tls-san:
   - cluster.k8s.net
