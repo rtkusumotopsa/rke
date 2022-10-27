@@ -77,3 +77,23 @@ Para ver se está tudo funcional, execute
 Notas
 
 Dois scripts de limpezas serão instalados no caminho ./usr/local/bin/rke2. Eles são: rke2-killall.sh e rke2-uninstall.sh.
+
+************************************
+* IMPORTANTE IMPORTANTE IMPORTANTE *
+************************************
+
+Rotação do certifcado
+
+Por padrão, os certificados no RKE2 expiram em 12 meses.
+
+Se o certificado expirar ou estiver a 90 dias para expirar, os certificados são rotacionados quando o RKE2 é reiniciado.
+
+A partir  da versão v.1.21.8+rke2r1, os certificados podem ser rotacionados manualmente. Para fazer isso, o melhor é parar o rke2-server, rotacionar o certificado, e então iniciar o processo novamente.
+
+
+	systemctl stop rke2-server
+	rke2 certificate rotate
+	systemctl start rke2-server
+
+
+É também possível rotacionar um serviço individual passando a flag --service, por exemplo:rke2 certificate rotate --service api-server. Veja os subcomandos de certificados para maiores detalhes.
