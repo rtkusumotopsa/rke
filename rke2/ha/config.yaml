@@ -4,3 +4,4 @@ tls-san:
   - cluster.k8s.net
 node-taint:
   - "CriticalAddonsOnly=true:NoExecute"
+disable: rke2-ingress-nginx
