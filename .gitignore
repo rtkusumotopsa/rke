@@ -3,3 +3,8 @@ rancher-cluster.rkestate
 !*.sh
 !.gitignore
 rke2.yaml
+*.tgz
+*.gz
+runc.amd64
+*.service
+kubeadm/Utils/
